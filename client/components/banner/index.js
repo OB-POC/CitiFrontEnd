@@ -24,9 +24,9 @@ export default class Rel extends React.Component{
                 </div>
                 <div  style = {{display:'flex',flexDirection:'column'}}>
                 <span className = 'Savings-accounts'  style ={{whiteSpace: 'nowrap'}}>Debit Balance</span>
-                <span className = 'layer' style ={{whiteSpace: 'nowrap'}}>£ {this.props.accSumary.totalAvailableDebitBalance}</span>
+                <span className = 'layer' style ={{whiteSpace: 'nowrap'}}>$ {this.props.accSumary.totalAvailableDebitBalance}</span>
                 <span className = 'Credit-Accounts'  style ={{whiteSpace: 'nowrap'}}>Credit outstanding</span>
-                <span className = 'layer' style ={{whiteSpace: 'nowrap'}}>£ {this.props.accSumary.totalAvailableCreditBalance}</span>
+                <span className = 'layer' style ={{whiteSpace: 'nowrap'}}>$ {this.props.accSumary.totalAvailableCreditBalance}</span>
                 </div>
                 <div  style = {{display:'flex',flexDirection:'column'}}>
                 <span className = 'Want-to-reduce-your' style={{paddingRight:'30px'}}>Looking for best option to

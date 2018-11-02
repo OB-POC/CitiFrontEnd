@@ -93,9 +93,8 @@ export default class Offerings extends React.Component{
                         <h5 className='classMsg' id="msg">{this.state.cardData.aer?<p>Are you hoping to get the best possible return on
                             your hard earned
                             savings?
-                            Switch to` <strong>LGB - Club
-                            Lloyds Saver Account</strong> and
-                            enjoy a high rate of 0.6%
+                            Switch to <strong>Citigold</strong> and
+                            enjoy a high rate of 0.04%
                             annual returns on your
                             savings ! </p>:<p>Save more annually by
                             Switching to <strong>Costco Anywhere Visa® Card By Citi</strong>, with a very low
@@ -125,7 +124,7 @@ export default class Offerings extends React.Component{
 
                        {this.state.cardData.typeLeftOut =='credit'?
                         <img src = 'images/credit-citi.png' style = {{width: '100%',paddingTop : '25px'}}/>:
-                        <img src = 'images/capture.png' style = {{width: '100%',paddingTop : '25px'}}/>
+                        <img src = 'images/Capture-citi.png' style = {{width: '100%',paddingTop : '25px'}}/>
                        }
                   
                 </div>

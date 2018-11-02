@@ -69,7 +69,7 @@ export default class Rel extends React.Component{
      
       let senders1 = []
       console.log(this.state.payOutData)
-      // let aerLeftOut = this.state.payOutData.aerLeftOut
+      // let APYLeftOut = this.state.payOutData.APYLeftOut
       // let aprLeftOut = this.state.payOutData.aprLeftOut
       let bankleftOut = this.state.payOutData.bankleftOut
       // let bankLeftOut = this.state.payOutData.bankLeftOut
@@ -94,11 +94,11 @@ export default class Rel extends React.Component{
                 <div className='detail_credit'>
                     <div className='blur_bank_names'>{data.bankName}<br/></div>
                       <div>
-                        <b className=''>{data.interestRate} % AER</b><br/>
+                        <b className=''>{data.interestRate} % APY</b><br/>
                       </div>
                   
                 </div>
-                <div className='amount_credit'><h5><b style={{color:'#ff5d64'}}><span>&#163;</span> {data.contributingAmount}</b></h5></div>
+                <div className='amount_credit'><h5><b style={{color:'#ff5d64'}}><span>&#36;</span> {data.contributingAmount}</b></h5></div>
               </div>
           )
         })
@@ -118,14 +118,14 @@ export default class Rel extends React.Component{
                         </div>
                       
                   </div>
-                  <div className='amount_credit'><h5><b style={{color:'#ff5d64'}}><span>&#163;</span> {data.totalBalanceDue}</b></h5></div>
+                  <div className='amount_credit'><h5><b style={{color:'#ff5d64'}}><span>&#36;</span> {data.totalBalanceDue}</b></h5></div>
                 </div>
               </div>
             </div>
             <div className='col-xs-4' >
               <div className='outer_layer_payout' style={{marginTop:'8%',marginLeft:'49px',borderRadius:'6px',backgroundColor:'#FFFFFF',boxShadow:' 0 5px 16px 0 rgba(0, 0, 0, 0.08)',height:'77px',width:'160px'}}>
                 <div style={{display:'flex',paddingTop:'15px',paddingRight:'14px'}}>
-                <div className='amount_credit'><h5><b style={{color:'#ff5d64',marginLeft:'34px'}}><span>&#163;</span> {data.totalOutstandingBalance}</b></h5></div>
+                <div className='amount_credit'><h5><b style={{color:'#ff5d64',marginLeft:'34px'}}><span>&#36;</span> {data.totalOutstandingBalance}</b></h5></div>
                 </div>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default class Rel extends React.Component{
                       {/* <div className='inner_banner'>
                         <div className='heading_text' style={{padding:'25px'}}>
                         <center>
-                          Your potential savings will be £ {this.state.accSumary.savingsOnBestMatch} annually by following the recommended payout plan.
+                          Your potential savings will be $ {this.state.accSumary.savingsOnBestMatch} annually by following the recommended payout plan.
                         </center>
                         </div>
                       </div> */}

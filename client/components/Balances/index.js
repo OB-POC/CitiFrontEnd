@@ -55,7 +55,7 @@ export default class Balance extends React.Component{
                    <div style={{display:'flex',flexDirection:'row'}}>
                        <div style={{display:'flex',flexDirection:'column'}}>
                            <div className='bank'>Principal Due</div>
-                           <div className='JP_Morgan_Chase'>£ {data1.totalBalanceDue}</div>
+                           <div className='JP_Morgan_Chase'>$ {data1.totalBalanceDue}</div>
                            <div className='bank' style={{marginTop:'15px'}}>Due date</div>
                            <div className='JP_Morgan_Chase' style={{color:'#ff5d64'}}>{new Date(data1.dueDate).toDateString()}</div>
                        </div>
@@ -76,9 +76,9 @@ export default class Balance extends React.Component{
                        <div className='bank'><small>Banks</small></div>
                        <div className='JP_Morgan_Chase_blur'><div className='blur_bank_name'>{data.bankName}</div></div>
                        <div className='bank' style={{marginTop:'15px'}}><small>Credit limit</small></div>
-                       <div className='JP_Morgan_Chase'>£ {data1.creditLimit}</div>
+                       <div className='JP_Morgan_Chase'>$ {data1.creditLimit}</div>
                        <div className='bank' style={{marginTop:'15px'}}><small>Available credit</small></div>
-                       <div className='JP_Morgan_Chase'>£ {data1.availableCredit}</div>
+                       <div className='JP_Morgan_Chase'>$ {data1.availableCredit}</div>
                    </div>
                </div>
            </div>
@@ -86,7 +86,7 @@ export default class Balance extends React.Component{
                <div style={{display:'flex',flexDirection:'row'}}>
                    <div style={{display:'flex',flexDirection:'column'}}>
                        <div className='bank'>Minimum due balance</div>
-                       <div className='JP_Morgan_Chase'>£ {data1.minBalanceDue||data1.minMonthlyPayment}</div>
+                       <div className='JP_Morgan_Chase'>$ {data1.minBalanceDue||data1.minMonthlyPayment}</div>
                        <div className='bank' style={{marginTop:'15px'}}>Due date</div>
                        <div className='JP_Morgan_Chase' style={{color:'#ff5d64'}}>{new Date(data1.dueDate).toDateString()}</div>
                    </div>
@@ -110,7 +110,7 @@ export default class Balance extends React.Component{
         var out = data.accounts.map(function (data2, k) {
           return (
 
-          <div key={k} className='amount-credit'><h5><b style={{color:'#ff5d64'}}><span>&#163;</span>{data2.minMonthlyPayment || data2.totalBalanceDue}</b></h5></div>
+          <div key={k} className='amount-credit'><h5><b style={{color:'#ff5d64'}}><span>&#36;</span>{data2.minMonthlyPayment || data2.totalBalanceDue}</b></h5></div>
         )
         })
         return(
@@ -152,9 +152,9 @@ export default class Balance extends React.Component{
                            <div className='bank'><small>Banks</small></div>
                            <div className='JP_Morgan_Chase_blur'><div className='blur_bank_name'>{data.bankName}</div></div>
                            <div className='bank' style={{marginTop:'15px'}}><small>Standing Instructions</small></div>
-                           <div className='JP_Morgan_Chase'>£ {data1.standingInst}</div>
+                           <div className='JP_Morgan_Chase'>$ {data1.standingInst}</div>
                            <div className='bank' style={{marginTop:'15px'}}><small>Min. Balance</small></div>
-                           <div className='JP_Morgan_Chase'>£ {data1.minBalance}</div>
+                           <div className='JP_Morgan_Chase'>$ {data1.minBalance}</div>
                        </div>
                    </div>
                </div>
@@ -162,14 +162,14 @@ export default class Balance extends React.Component{
                    <div style={{display:'flex',flexDirection:'row'}}>
                        <div style={{display:'flex',flexDirection:'column'}}>
                            <div className='bank'>Available Balance</div>
-                           <div className='JP_Morgan_Chase'>£ {data1.availableBalance}</div>
+                           <div className='JP_Morgan_Chase'>$ {data1.availableBalance}</div>
                        </div>
                    </div>
                </div>
            </div>
            </div>
         </ToolTip>
-            <b className='credit'>{data1.interestRate}% AER</b>
+            <b className='credit'>{data1.interestRate}% APY</b>
             </div>
           )
         })
@@ -182,7 +182,7 @@ export default class Balance extends React.Component{
         })
         var bal = data.accounts.map(function (data2, k) {
           return (
-            <div key={k} className='amount-credit'><h5><b style={{color:'#4a4a4a'}}><span>&#163;</span>{data2.balance}</b></h5></div>
+            <div key={k} className='amount-credit'><h5><b style={{color:'#4a4a4a'}}><span>&#36;</span>{data2.balance}</b></h5></div>
         )
         })
         return(
