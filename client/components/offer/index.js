@@ -98,16 +98,14 @@ export default class Offerings extends React.Component{
                             enjoy a high rate of 0.6%
                             annual returns on your
                             savings ! </p>:<p>Save more annually by
-                            Switching to <strong>LBG’s 0%
-                            Purchase and Balance
-                            Transfer</strong>, with a very low
+                            Switching to <strong>Costco Anywhere Visa® Card By Citi</strong>, with a very low
                             Annual Percentage Rate
-                            of 19.9% !</p>} 
+                            of 17.24% !</p>} 
                         </h5>
                     </div>
                     <div className='col-4'>
                         <div style={{position:'relative'}}>
-                          <img style= {{width: '18vw'}} src="images/ic-card-copy.png" className="lbgcard"/>
+                          <img style= {{width: '18vw'}} src="images/ic-card-copy-1.png" className="lbgcard"/>
                           <button className='switch-button' style = {{cursor: 'pointer'}} onClick={this.notify.bind(this)}>
                               <span id="switch-msg">Switch Now</span>
                               <i id="right-arrow" className='fas fa-arrow-right fa-lg'></i>
@@ -126,7 +124,7 @@ export default class Offerings extends React.Component{
                   
 
                        {this.state.cardData.typeLeftOut =='credit'?
-                        <img src = 'images/credit.png' style = {{width: '100%',paddingTop : '25px'}}/>:
+                        <img src = 'images/credit-citi.png' style = {{width: '100%',paddingTop : '25px'}}/>:
                         <img src = 'images/capture.png' style = {{width: '100%',paddingTop : '25px'}}/>
                        }
                   

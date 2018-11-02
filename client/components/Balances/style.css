@@ -52,6 +52,19 @@
     color: #000000;
   }
 
+  .JP_Morgan_Chase_blur{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    filter: blur(2px)
+  }
+
   .outer-layer2{
     margin-top: 20px;
     margin-bottom: 25px;
@@ -231,4 +244,16 @@
     position: absolute;
     left: 53px;
     line-height: 55px;
+  }
+
+  .blur_large_images {
+    filter: blur(4px)
+  }
+
+  .blur_small_images {
+    filter : blur(2px)
+  } 
+
+  .blur_bank_name {
+    filter : blur(2px)
   }

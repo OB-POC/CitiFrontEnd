@@ -39,13 +39,13 @@ export default class Balance extends React.Component{
             <div className='tooltip_background'>
            <div className='row'>
                <div className='col-4' style={{paddingTop:'30px',paddingLeft:'22px'}}>
-                   <img style={{height:'110px',width:'175px',marginLeft:'22px'}} src={'../../../../images/cards/Credit/'+data.bankName+'@2x.png'}/>
+                   <img className='blur_large_images' style={{height:'110px',width:'175px',marginLeft:'22px'}} src={'../../../../images/cards/Credit/'+data.bankName+'@2x.png'}/>
                </div>
                <div className='col-4' style={{paddingTop:'20px',paddingLeft:'55px'}}>
                    <div style={{display:'flex',flexDirection:'row',marginRight:'22px'}}>
                        <div style={{display:'flex',flexDirection:'column'}}>
                            <div className='bank'><small>Banks</small></div>
-                           <div className='JP_Morgan_Chase'>{data.bankName}</div>
+                           <div className='JP_Morgan_Chase_blur'><div className='blur_bank_name'>{data.bankName}</div></div>
                            <div className='bank' style={{marginTop:'15px'}}><small>Remaining Full Term</small></div>
                            <div className='JP_Morgan_Chase'>{data1.remainingFullTerm}</div>
                        </div>
@@ -68,13 +68,13 @@ export default class Balance extends React.Component{
         <div className='tooltip_background'>
        <div className='row'>
            <div className='col-4' style={{paddingTop:'30px',paddingLeft:'22px'}}>
-               <img style={{height:'110px',width:'175px',marginLeft:'22px'}} src={'../../../../images/cards/Credit/'+data.bankName+'@2x.png'}/>
+               <img className='blur_large_images' style={{height:'110px',width:'175px',marginLeft:'22px'}} src={'../../../../images/cards/Credit/'+data.bankName+'@2x.png'}/>
            </div>
            <div className='col-4' style={{paddingTop:'20px',paddingLeft:'55px'}}>
                <div style={{display:'flex',flexDirection:'row',marginRight:'22px'}}>
                    <div style={{display:'flex',flexDirection:'column'}}>
                        <div className='bank'><small>Banks</small></div>
-                       <div className='JP_Morgan_Chase'>{data.bankName}</div>
+                       <div className='JP_Morgan_Chase_blur'><div className='blur_bank_name'>{data.bankName}</div></div>
                        <div className='bank' style={{marginTop:'15px'}}><small>Credit limit</small></div>
                        <div className='JP_Morgan_Chase'>£ {data1.creditLimit}</div>
                        <div className='bank' style={{marginTop:'15px'}}><small>Available credit</small></div>
@@ -117,9 +117,9 @@ export default class Balance extends React.Component{
           <div key={i} className='outer-layer row' style={{display:'flex'}} onMouseEnter={context.showTooltip.bind(this, i+'c')} onMouseLeave={context.hideTooltip.bind(this)}
           tabIndex = "1">
           <div className="col-9">
-          <div className='img-credit'><img src={'../../../../images/cards/Credit/'+data.bankName+'.png'} /></div>
+          <div className='img-credit'><img className='blur_small_images' src={'../../../../images/cards/Credit/'+data.bankName+'.png'} /></div>
           <div className='detail-credit'>
-               <div className='credit'>{data.bankName}
+               <div className='credit'><div className='blur_bank_name'>{data.bankName}</div>
                <div id={tooltipRelId}></div>
                {accData}
                </div>
@@ -140,17 +140,17 @@ export default class Balance extends React.Component{
           return(
             <div key={j}>
             <div id={tooltipRelId}></div>
-            <ToolTip active={contextState.tooltipId == i+'d'} position="top" arrow="left" parent={tooltipRelIdHash}>
+            <ToolTip  active={contextState.tooltipId == i+'d'} position="top" arrow="left" parent={tooltipRelIdHash}>
             <div className='tooltip_background'>
            <div className='row'>
                <div className='col-4' style={{paddingTop:'30px',paddingLeft:'22px'}}>
-                   <img style={{height:'110px',width:'175px',marginLeft:'22px'}} src={'../../../../images/cards/debit/'+data.bankName+'@2x.png'}/>
+                   <img className='blur_large_images' style={{height:'110px',width:'175px',marginLeft:'22px'}} src={'../../../../images/cards/debit/'+data.bankName+'@2x.png'}/>
                </div>
                <div className='col-4' style={{paddingTop:'20px',paddingLeft:'55px'}}>
                    <div style={{display:'flex',flexDirection:'row',marginRight:'22px'}}>
                        <div style={{display:'flex',flexDirection:'column'}}>
                            <div className='bank'><small>Banks</small></div>
-                           <div className='JP_Morgan_Chase'>{data.bankName}</div>
+                           <div className='JP_Morgan_Chase_blur'><div className='blur_bank_name'>{data.bankName}</div></div>
                            <div className='bank' style={{marginTop:'15px'}}><small>Standing Instructions</small></div>
                            <div className='JP_Morgan_Chase'>£ {data1.standingInst}</div>
                            <div className='bank' style={{marginTop:'15px'}}><small>Min. Balance</small></div>
@@ -190,9 +190,9 @@ export default class Balance extends React.Component{
         onMouseEnter={context.showTooltip.bind(this, i+'d')}
         onMouseLeave={context.hideTooltip.bind(this)} tabIndex = "1">
           <div className = 'col-9'>
-          <div className='img-credit'><img src={'../../../../images/cards/debit/'+data.bankName+'.png'} /></div>
+          <div className='img-credit'><img className='blur_small_images' src={'../../../../images/cards/debit/'+data.bankName+'.png'} /></div>
              <div className='detail-credit'>
-                  <div className='credit'>{data.bankName}
+                  <div className='credit'><div className='blur_bank_name'>{data.bankName}</div>
                   <div id={tooltipRelId}></div>
                   {accData}
                   </div>

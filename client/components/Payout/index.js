@@ -90,13 +90,13 @@ export default class Rel extends React.Component{
 
           return(
               <div key = {i} style={{display:'flex',height:'77px',paddingTop:'15px',paddingRight:'14px'}}>
-                <div className='img_credit_payout'><img src={'../../../../images/cards/debit/'+data.bankName+'.png'} /></div>
+                <div className='img_credit_payout'><img className='blur_bank_card' src={'../../../../images/cards/debit/'+data.bankName+'.png'} /></div>
                 <div className='detail_credit'>
-                    <div className=''>{data.bankName}<br/>
+                    <div className='blur_bank_names'>{data.bankName}<br/></div>
                       <div>
                         <b className=''>{data.interestRate} % AER</b><br/>
                       </div>
-                    </div>
+                  
                 </div>
                 <div className='amount_credit'><h5><b style={{color:'#ff5d64'}}><span>&#163;</span> {data.contributingAmount}</b></h5></div>
               </div>
@@ -110,13 +110,13 @@ export default class Rel extends React.Component{
             <div className='col-xs-4' >
               <div className='outer_layer_payout' style={{marginTop:'17px',marginLeft:'49px',borderRadius:'6px',backgroundColor:'#FFFFFF',boxShadow:' 0 5px 16px 0 rgba(0, 0, 0, 0.08)',width:'310px'}}>
                 <div id={"element-target-"+i} style={{display:'flex',height:'77px',paddingTop:'15px',paddingRight:'14px'}}>
-                  <div className='img_credit_payout'><img src={'../../../../images/cards/Credit/'+data.bankName+'.png'} /></div>
+                  <div className='img_credit_payout'><img className='blur_bank_card' src={'../../../../images/cards/Credit/'+data.bankName+'.png'} /></div>
                   <div className='detail_credit'>
-                      <div className=''>{data.bankName}<br/>
+                      <div className='blur_bank_names'>{data.bankName}<br/></div>
                         <div>
                           <b className=''>{data.interestRate || data.apr} % APR</b><br/>
                         </div>
-                      </div>
+                      
                   </div>
                   <div className='amount_credit'><h5><b style={{color:'#ff5d64'}}><span>&#163;</span> {data.totalBalanceDue}</b></h5></div>
                 </div>

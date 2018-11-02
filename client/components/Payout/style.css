@@ -189,3 +189,11 @@
   margin: 40px 35px 20px 35px;
   border-radius: 4px;
 }
+
+.blur_bank_card {
+  filter: blur(2px)
+}
+
+.blur_bank_names{
+  filter: blur(2px)
+}
